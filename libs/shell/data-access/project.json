@@ -1,0 +1,26 @@
+{
+  "projectType": "library",
+  "root": "libs/shell/data-access",
+  "sourceRoot": "libs/shell/data-access/src",
+  "prefix": "mfe-client",
+  "targets": {
+    "test": {
+      "executor": "@nrwl/jest:jest",
+      "outputs": ["coverage/libs/shell/data-access"],
+      "options": {
+        "jestConfig": "libs/shell/data-access/jest.config.js",
+        "passWithNoTests": true
+      }
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "options": {
+        "lintFilePatterns": [
+          "libs/shell/data-access/src/**/*.ts",
+          "libs/shell/data-access/src/**/*.html"
+        ]
+      }
+    }
+  },
+  "tags": []
+}

@@ -15,6 +15,9 @@
     "shared-ui": "libs/shared/ui",
     "shared-util": "libs/shared/util",
     "shell": "apps/shell",
-    "shell-e2e": "apps/shell-e2e"
+    "shell-data-access": "libs/shell/data-access",
+    "shell-e2e": "apps/shell-e2e",
+    "shell-ui": "libs/shell/ui",
+    "shell-util": "libs/shell/util"
   }
 }

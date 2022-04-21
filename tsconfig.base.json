@@ -39,7 +39,10 @@
       ],
       "@mfe-client/shared/toolkit": ["libs/shared/toolkit/src/index.ts"],
       "@mfe-client/shared/ui": ["libs/shared/ui/src/index.ts"],
-      "@mfe-client/shared/util": ["libs/shared/util/src/index.ts"]
+      "@mfe-client/shared/util": ["libs/shared/util/src/index.ts"],
+      "@mfe-client/shell/data-access": ["libs/shell/data-access/src/index.ts"],
+      "@mfe-client/shell/ui": ["libs/shell/ui/src/index.ts"],
+      "@mfe-client/shell/util": ["libs/shell/util/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]
