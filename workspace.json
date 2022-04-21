@@ -1,4 +1,20 @@
 {
   "version": 2,
-  "projects": {}
+  "projects": {
+    "nomination-light": "apps/nomination-light",
+    "nomination-light-data-access": "libs/nomination-light/data-access",
+    "nomination-light-e2e": "apps/nomination-light-e2e",
+    "nomination-light-feature-create": "libs/nomination-light/feature-create",
+    "nomination-light-feature-search": "libs/nomination-light/feature-search",
+    "nomination-light-ui": "libs/nomination-light/ui",
+    "nomination-light-util": "libs/nomination-light/util",
+    "shared-data-access": "libs/shared/data-access",
+    "shared-security": "libs/shared/security",
+    "shared-service-worker": "libs/shared/service-worker",
+    "shared-toolkit": "libs/shared/toolkit",
+    "shared-ui": "libs/shared/ui",
+    "shared-util": "libs/shared/util",
+    "shell": "apps/shell",
+    "shell-e2e": "apps/shell-e2e"
+  }
 }

@@ -1,0 +1,26 @@
+{
+  "projectType": "library",
+  "root": "libs/nomination-light/feature-search",
+  "sourceRoot": "libs/nomination-light/feature-search/src",
+  "prefix": "mfe-client",
+  "targets": {
+    "test": {
+      "executor": "@nrwl/jest:jest",
+      "outputs": ["coverage/libs/nomination-light/feature-search"],
+      "options": {
+        "jestConfig": "libs/nomination-light/feature-search/jest.config.js",
+        "passWithNoTests": true
+      }
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "options": {
+        "lintFilePatterns": [
+          "libs/nomination-light/feature-search/src/**/*.ts",
+          "libs/nomination-light/feature-search/src/**/*.html"
+        ]
+      }
+    }
+  },
+  "tags": []
+}

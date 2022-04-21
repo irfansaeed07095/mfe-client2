@@ -1,0 +1,26 @@
+{
+  "projectType": "library",
+  "root": "libs/nomination-light/ui",
+  "sourceRoot": "libs/nomination-light/ui/src",
+  "prefix": "mfe-client",
+  "targets": {
+    "test": {
+      "executor": "@nrwl/jest:jest",
+      "outputs": ["coverage/libs/nomination-light/ui"],
+      "options": {
+        "jestConfig": "libs/nomination-light/ui/jest.config.js",
+        "passWithNoTests": true
+      }
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "options": {
+        "lintFilePatterns": [
+          "libs/nomination-light/ui/src/**/*.ts",
+          "libs/nomination-light/ui/src/**/*.html"
+        ]
+      }
+    }
+  },
+  "tags": []
+}

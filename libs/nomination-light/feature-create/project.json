@@ -1,0 +1,26 @@
+{
+  "projectType": "library",
+  "root": "libs/nomination-light/feature-create",
+  "sourceRoot": "libs/nomination-light/feature-create/src",
+  "prefix": "mfe-client",
+  "targets": {
+    "test": {
+      "executor": "@nrwl/jest:jest",
+      "outputs": ["coverage/libs/nomination-light/feature-create"],
+      "options": {
+        "jestConfig": "libs/nomination-light/feature-create/jest.config.js",
+        "passWithNoTests": true
+      }
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "options": {
+        "lintFilePatterns": [
+          "libs/nomination-light/feature-create/src/**/*.ts",
+          "libs/nomination-light/feature-create/src/**/*.html"
+        ]
+      }
+    }
+  },
+  "tags": []
+}

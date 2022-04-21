@@ -1,0 +1,28 @@
+{
+  "root": "apps/nomination-light-e2e",
+  "sourceRoot": "apps/nomination-light-e2e/src",
+  "projectType": "application",
+  "targets": {
+    "e2e": {
+      "executor": "@nrwl/cypress:cypress",
+      "options": {
+        "cypressConfig": "apps/nomination-light-e2e/cypress.json",
+        "devServerTarget": "nomination-light:serve:development"
+      },
+      "configurations": {
+        "production": {
+          "devServerTarget": "nomination-light:serve:production"
+        }
+      }
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": ["apps/nomination-light-e2e/**/*.{js,ts}"]
+      }
+    }
+  },
+  "tags": [],
+  "implicitDependencies": ["nomination-light"]
+}

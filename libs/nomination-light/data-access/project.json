@@ -1,0 +1,26 @@
+{
+  "projectType": "library",
+  "root": "libs/nomination-light/data-access",
+  "sourceRoot": "libs/nomination-light/data-access/src",
+  "prefix": "mfe-client",
+  "targets": {
+    "test": {
+      "executor": "@nrwl/jest:jest",
+      "outputs": ["coverage/libs/nomination-light/data-access"],
+      "options": {
+        "jestConfig": "libs/nomination-light/data-access/jest.config.js",
+        "passWithNoTests": true
+      }
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "options": {
+        "lintFilePatterns": [
+          "libs/nomination-light/data-access/src/**/*.ts",
+          "libs/nomination-light/data-access/src/**/*.html"
+        ]
+      }
+    }
+  },
+  "tags": []
+}

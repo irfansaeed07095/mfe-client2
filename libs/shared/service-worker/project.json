@@ -1,0 +1,26 @@
+{
+  "projectType": "library",
+  "root": "libs/shared/service-worker",
+  "sourceRoot": "libs/shared/service-worker/src",
+  "prefix": "mfe-client",
+  "targets": {
+    "test": {
+      "executor": "@nrwl/jest:jest",
+      "outputs": ["coverage/libs/shared/service-worker"],
+      "options": {
+        "jestConfig": "libs/shared/service-worker/jest.config.js",
+        "passWithNoTests": true
+      }
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "options": {
+        "lintFilePatterns": [
+          "libs/shared/service-worker/src/**/*.ts",
+          "libs/shared/service-worker/src/**/*.html"
+        ]
+      }
+    }
+  },
+  "tags": []
+}

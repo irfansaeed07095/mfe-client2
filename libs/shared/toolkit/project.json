@@ -1,0 +1,26 @@
+{
+  "projectType": "library",
+  "root": "libs/shared/toolkit",
+  "sourceRoot": "libs/shared/toolkit/src",
+  "prefix": "mfe-client",
+  "targets": {
+    "test": {
+      "executor": "@nrwl/jest:jest",
+      "outputs": ["coverage/libs/shared/toolkit"],
+      "options": {
+        "jestConfig": "libs/shared/toolkit/jest.config.js",
+        "passWithNoTests": true
+      }
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "options": {
+        "lintFilePatterns": [
+          "libs/shared/toolkit/src/**/*.ts",
+          "libs/shared/toolkit/src/**/*.html"
+        ]
+      }
+    }
+  },
+  "tags": []
+}

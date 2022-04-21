@@ -14,7 +14,33 @@
     "skipLibCheck": true,
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
-    "paths": {}
+    "paths": {
+      "@mfe-client/nomination-light/data-access": [
+        "libs/nomination-light/data-access/src/index.ts"
+      ],
+      "@mfe-client/nomination-light/feature-create": [
+        "libs/nomination-light/feature-create/src/index.ts"
+      ],
+      "@mfe-client/nomination-light/feature-search": [
+        "libs/nomination-light/feature-search/src/index.ts"
+      ],
+      "@mfe-client/nomination-light/ui": [
+        "libs/nomination-light/ui/src/index.ts"
+      ],
+      "@mfe-client/nomination-light/util": [
+        "libs/nomination-light/util/src/index.ts"
+      ],
+      "@mfe-client/shared/data-access": [
+        "libs/shared/data-access/src/index.ts"
+      ],
+      "@mfe-client/shared/security": ["libs/shared/security/src/index.ts"],
+      "@mfe-client/shared/service-worker": [
+        "libs/shared/service-worker/src/index.ts"
+      ],
+      "@mfe-client/shared/toolkit": ["libs/shared/toolkit/src/index.ts"],
+      "@mfe-client/shared/ui": ["libs/shared/ui/src/index.ts"],
+      "@mfe-client/shared/util": ["libs/shared/util/src/index.ts"]
+    }
   },
   "exclude": ["node_modules", "tmp"]
 }
