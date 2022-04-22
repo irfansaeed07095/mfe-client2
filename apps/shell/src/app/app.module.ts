@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
+import { loadRemoteModule } from '@nrwl/angular/mfe';
 import { AppComponent } from './app.component';
 import { NxWelcomeComponent } from './nx-welcome.component';
 import { RouterModule } from '@angular/router';
@@ -14,7 +14,9 @@ import { RouterModule } from '@angular/router';
         {
           path: 'nomination-light',
           loadChildren: () =>
-            import('nomination-light/Module').then((m) => m.RemoteEntryModule),
+            loadRemoteModule('nomination-light', './Module').then(
+              (m) => m.RemoteEntryModule
+            ),
         },
       ],
       { initialNavigation: 'enabledBlocking' }

@@ -13,6 +13,14 @@ import { RemoteEntryComponent } from './entry.component';
         path: '',
         component: RemoteEntryComponent,
       },
+      {
+        path: 'create',
+        pathMatch: 'full',
+        loadChildren: () =>
+          import('@mfe-client/nomination-light/feature-create').then(
+            (m) => m.NominationLightFeatureCreateModule
+          ),
+      },
     ]),
   ],
   providers: [],
